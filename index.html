@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <title>Tamales</title>
     <style>
       h1 {
@@ -91,70 +102,81 @@
     </style>
   </head>
   <body>
-    <h1>I love Mexican Tamales</h1>
-    <h2>
-      <hr />
-      Homemade Mexican Tamles made by my family are the best Christmas gift!🎄🎁
-      <hr />
-    </h2>
-    <br />
-    <img
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/455/original/Unknown.jpeg?1697253518"
-    />
-    <p>
-      Tamales are a Mexican Christmas Eve tradition. My family makes our Tamales
-      after Thanksgiving because making the tamales is such a long complicated
-      process. During our tamale making parties everyone has their own job to
-      do. One person is in charge of making the meat and putting the meat into
-      the tamale. One person is in charge of making the masa. The next person is
-      in charge of pressing the tamales. Lastly, is the person who wraps the
-      tamales and places a bow on them so they stay together and then packages
-      the dozens up to be frozen until Christmas Eve when we eat the tamales. My
-      family has created many memories during these tamale parties. Those
-      memories are the reason why Tamales are so special to me!
+    <div class="container">
+      <h1>I love Mexican Tamales</h1>
+      <h2>
+        <hr />
+        Homemade Mexican Tamles made by my family are the best Christmas
+        gift!🎄🎁
+        <hr />
+      </h2>
       <br />
-      <em
-        ><strong>
-          <a href="https://amzn.to/46snHH7" target="_blank" class="chili">
-            Buy the best chili powder here</a
-          ></strong
-        ></em
-      >
-    </p>
-    <ul>
-      <div>
-        <em><a class="Roles">Tamale Party Roles</a></em>
-      </div>
-      <li>Meat Maker and Filler</li>
-      <li>Masa Maker</li>
-      <li>Masa Presser</li>
-      <li>Tamale Wrapper</li>
-    </ul>
-    <br />
-    <button>Share your traditions</button>
-    <br />
-    <p>
-      This page was built by
-      <span class="creator">
-        <em>
-          <a href="https://www.instagram.com/avsangel/" target="_blank"
-            >Alesia Shope</a
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/100/455/original/Unknown.jpeg?1697253518"
+      />
+      <p>
+        Tamales are a Mexican Christmas Eve tradition. My family makes our
+        Tamales after Thanksgiving because making the tamales is such a long
+        complicated process. During our tamale making parties everyone has their
+        own job to do. One person is in charge of making the meat and putting
+        the meat into the tamale. One person is in charge of making the masa.
+        The next person is in charge of pressing the tamales. Lastly, is the
+        person who wraps the tamales and places a bow on them so they stay
+        together and then packages the dozens up to be frozen until Christmas
+        Eve when we eat the tamales. My family has created many memories during
+        these tamale parties. Those memories are the reason why Tamales are so
+        special to me!
+        <br />
+        <em
+          ><strong>
+            <a href="https://amzn.to/46snHH7" target="_blank" class="chili">
+              Buy the best chili powder here</a
+            ></strong
           ></em
-        ></span
-      >
-    </p>
-    <script>
-      function tradition() {
-        let name = prompt("What is your name?");
-        let family = prompt("What is your favorite family tradition?");
-        if (family.length <= 2) {
-          alert("go create some traditions!");
-        } else {
-          alert(name + ", Enjoy " + family + " with those you love!");
+        >
+      </p>
+      <ul>
+        <div>
+          <em><a class="Roles">Tamale Party Roles</a></em>
+        </div>
+        <li>Meat Maker and Filler</li>
+        <li>Masa Maker</li>
+        <li>Masa Presser</li>
+        <li>Tamale Wrapper</li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item">Tamale Party Roles</li>
+        <li class="list-group-item">Meat Maker and Filler</li>
+        <li class="list-group-item">Masa Maker</li>
+        <li class="list-group-item">Masa Presser</li>
+        <li class="list-group-item">Tamale Wrapper</li>
+      </ul>
+      <br />
+      <button>Share your traditions</button>
+      <br />
+      <p>
+        This page was built by
+        <span class="creator">
+          <em>
+            <a href="https://www.instagram.com/avsangel/" target="_blank"
+              >Alesia Shope</a
+            ></em
+          ></span
+        >
+      </p>
+      <script>
+        function tradition() {
+          let name = prompt("What is your name?");
+          let family = prompt("What is your favorite family tradition?");
+          if (family.length <= 2) {
+            alert("go create some traditions!");
+          } else {
+            alert(name + ", Enjoy " + family + " with those you love!");
+          }
         }
-      }
-      let traditionButton = document.querySelector("Button");
-      traditionButton.addEventListener("click", tradition);
-    </script>
+        let traditionButton = document.querySelector("Button");
+        traditionButton.addEventListener("click", tradition);
+      </script>
+    </div>
   </body>
 </html>
