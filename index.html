@@ -77,11 +77,6 @@
         line-height: 1.7;
       }
 
-      .Roles {
-        text-decoration-line: underline;
-        font-weight: bold;
-        color: teal;
-      }
       .chili {
         display: block;
         margin-top: 10px;
@@ -99,8 +94,24 @@
       .creator {
         background-color: aqua;
       }
-      .list-group {
-        border: none;
+      .roles {
+        overflow-x: auto;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        height: 240px;
+        border-spacing: 0;
+      }
+      table {
+        border: 1px solid teal;
+        text-align: center;
+      }
+      thead {
+        background-color: peachpuff;
+      }
+      td {
+        border-top: 1px solid;
       }
     </style>
   </head>
@@ -138,23 +149,37 @@
           ></em
         >
       </p>
-      <ul>
-        <div>
-          <em><a class="Roles">Tamale Party Roles</a></em>
-        </div>
-        <li>Meat Maker and Filler</li>
-        <li>Masa Maker</li>
-        <li>Masa Presser</li>
-        <li>Tamale Wrapper</li>
-      </ul>
-      <ul class="list-group">
-        <li class="list-group-item Roles">Tamale Party Roles</li>
-        <li class="list-group-item">Meat Maker and Filler</li>
-        <li class="list-group-item">Masa Maker</li>
-        <li class="list-group-item">Masa Presser</li>
-        <li class="list-group-item">Tamale Wrapper</li>
-      </ul>
-      <br />
+
+      <div class="roles">
+        <table>
+          <thead>
+            <tr>
+              <th>Tamale Party Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Someone to cook the meat for the tamales</td>
+            </tr>
+            <tr>
+              <td>Someone to make the Masa</td>
+            </tr>
+            <tr>
+              <td>Someone to press the Masa</td>
+            </tr>
+            <tr>
+              <td>Someone to fill the tamales with Meat</td>
+            </tr>
+            <tr>
+              <td>
+                Someone to prep the husks and wrap the tamales after they are
+                filled
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <button>Share your traditions</button>
       <br />
       <p>
